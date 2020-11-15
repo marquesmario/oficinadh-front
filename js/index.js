@@ -15,11 +15,12 @@ function logar(event) {
     xhr.onreadystatechange = function(){
         if(this.readyState === XMLHttpRequest.DONE && this.status === 200){
             xhr.response;
+            console.log(xhr.response);
         }
     }
     const login = '{ "username" : "' + username.value + '", "password" : "' + password.value + '"}';
     xhr.send(login);
-    window.location.href = 'cliente.html';
+    // window.location.href = 'cliente.html';
 }
 
 
