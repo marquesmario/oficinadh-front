@@ -11,7 +11,7 @@ function getProdutos(event) {
     event.preventDefault();
     var xhr = new XMLHttpRequest()
    
-    xhr.open("GET", "http://localhost:8080/produtos", true);
+    xhr.open("GET", "http://oficinadh.heroku.com/produtos", true);
 
     xhr.onreadystatechange = function(){
         if(this.readyState === XMLHttpRequest.DONE && this.status === 200){

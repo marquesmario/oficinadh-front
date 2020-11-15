@@ -10,7 +10,7 @@ function logar(event) {
    
   
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "localhost:8080/login", true);
+    xhr.open("POST", "http://oficinadh.heroku.com/login", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function(){
         if(this.readyState === XMLHttpRequest.DONE && this.status === 200){
